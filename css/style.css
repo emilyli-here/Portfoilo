@@ -44,6 +44,7 @@ html {
 
 	--night-color: #0d1117;
 	--day-color: #f6f6f6;
+	--logo-color: #6ac6b1;
 	--night-background: radial-gradient(circle at top left, #0d1117, #000022);
 	--transition-time: 0.5s;
 
@@ -58,7 +59,7 @@ html {
 	--element1: var(--night-color);
 	--element2: black;
 	--element3: #474747;
-	--primary: #6ac6b1;
+	--primary: var(--logo-color);
 	--secondary: #6ac6b1;
 }
 
@@ -69,7 +70,7 @@ html {
 	--element1: var(--day-color);
 	--element2: white;
 	--element3: #8F8F8F;
-	--primary: #6ac6b1;
+	--primary: var(--logo-color);
 	--secondary: #C9E1E3;
 }
 
@@ -193,7 +194,7 @@ a {
 
 }
 
-a:focus, img:focus, button:focus, .btn:focus {outline: none;}
+a:focus, img:focus, button:focus, .btn:focus {outline: none; color: var(--primary);}
 
 ::-moz-selection {background-color: var(--primary);color:var(--surface2);text-shadow:none;}
 
@@ -257,8 +258,6 @@ footer[role="footer"]{ background-color:var(--surface2); padding-top:100px; padd
 
 footer[role="footer"] > h1 a{ margin:0 auto; display:block; max-width:66px;}
 
-footer[role="footer"] h1 a img{ width: 100px;}
-
 footer[role="footer"] nav{ padding-top:37px; padding-bottom:43px}
 
 footer[role="footer"] nav > ul{ text-align:center; padding:0; margin:0}
@@ -283,7 +282,9 @@ footer[role="footer"] .copy-right{ text-align:center; display:block; font-size:1
 
 main[role="main-inner-wrapper"] .about-content{ background-color: var(--secondary); padding-top:57px; padding-left:70px; padding-right:67px; padding-bottom:58px}
 
-main[role="main-inner-wrapper"] .about-content p, a{ font-size:17px; line-height:30px; color:var(--surface2); padding-bottom:20px}
+main[role="main-inner-wrapper"] .about-content p { font-size:17px; line-height:30px; color:var(--surface2); padding-bottom:20px}
+
+main[role="main-inner-wrapper"] .about-content a { color:var(--surface2);}
 
 main[role="main-inner-wrapper"] .thumbnails-pan{ padding-top:30px}
 
