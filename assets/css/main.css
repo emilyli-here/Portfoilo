@@ -108,7 +108,7 @@ svg,img { max-width: 100%; height: auto; }
 
 .ds-banner-section figure{ margin-bottom: var(--margin-54) }
 .ds-banner-section p{font-size:var(--font_16);line-height:var(--30); margin-bottom: var(--30); }
-.ds-button{ display: inline-block; text-transform: uppercase; color: #FFF; background-color: #45CD86; border-radius:var(--font_30); padding:1.125rem 3.625rem; font-weight: 700; letter-spacing: 1px }
+.ds-button{ display: inline-block; text-transform: uppercase; color: #FFF; background-color: var(--primary); border-radius:var(--font_30); padding:1.125rem 3.625rem; font-weight: 700; letter-spacing: 1px }
 .ds-button:hover{ color: #FFF; background-color:var(--primary) }
 .ds-content-width p{ width:570px }
 
