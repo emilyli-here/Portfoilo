@@ -79,15 +79,19 @@ svg,img { max-width: 100%; height: auto; }
 .ds-boder_text:after{ content: ""; position: absolute; bottom: 0; left: 0; background-color:var(--primary); height: 0.9375rem; width:100%;}
 .margin-60{ margin-bottom: var(--margin-60);  }
 .padding-0{ padding-top: 0 }
-.ds-view-button{font-weight: 600; font-size: 1rem; color: #000}
+.ds-view-button{font-weight: 600; font-size: 1rem; color: var(--element1);}
 .ds-view-button i{ display: inline-block; vertical-align: middle; color: var(--primary); font-size: 1.625rem; }
 .ds-view-button:hover{color: var(--primary); }
+/*.ds-view-button:hover{color: #00B7CC; }*/
 .text-left{ text-align: left; }
 .ds-arrow {background: var(--primary);height:0.125rem;width:3.125rem;position: relative;cursor: pointer; display: inline-block; vertical-align: middle;transition-delay: 0s;transition-duration: 0.4s;transition-property: all;transition-timing-function: ease; margin-left:0.5rem}
-.ds-arrow:before, .ds-arrow:after {content: "";background: var(--primary);position: absolute;height:0.125rem;width:0.8125rem;}
+.ds-arrow:before, .ds-arrow:after {content: "";background: var(--primary);position: absolute;height:0.125rem;width:0.8125rem; /*transition-delay: 0s;transition-duration: 0.4s;transition-property: all;transition-timing-function:*/}
 .ds-arrow:before {right: -0.25rem;bottom: -0.25rem;transform: rotate(-45deg);}
-.ds-arrow:after {right: -0.25rem;top: -0.25rem;transform: rotate(45deg);}
+.ds-arrow:after {right: -0.25rem;top: -0.25rem; transform: rotate(45deg);}
 .ds-button-arrow:hover .ds-arrow{ margin-left:0.9375rem }
+.active .ds-arrow{ height: 0; width: 0; margin-left: 1rem;}
+.active .ds-arrow:before { bottom: 0 ; top: -0.12rem; transform: rotate(45deg); }
+.active .ds-arrow:after { right: -0.75rem; top: -0.12rem; transform: rotate(135deg); }
 
 .ds-back-to-home{ display: inline-block; padding:0.625rem 1.25rem; border-radius: 100%; border: 1px solid var(--element1); font-size: 1.875rem; color: var(--element1); }
 .ds-back-to-home:hover{ color: var(--primary); border-color: var(--primary); }
@@ -147,9 +151,8 @@ svg,img { max-width: 100%; height: auto; }
 .ds-hedding{ font-size: var(--font_48); margin-bottom: var(--font_14); }
 .ds-tools{ font-weight: 700 }
 .ds-case-studies-list p{ font-size: 1.2rem; line-height:var(--font_36); margin-bottom: 2.5rem }
-.ds-view-button{font-weight: 600; font-size: 1rem; color: var(--element1);}
-.ds-view-button i{ display: inline-block; vertical-align: middle; color: #00B7CC; font-size: 1.625rem; }
-.ds-view-button:hover{color: #00B7CC; }
+
+
 
 .ds-case-studies-details{ padding-bottom: 5.25rem; }
 .ds-case-studies-details .ds-case-studies-list{ margin-bottom: 2.75rem; }
@@ -397,3 +400,26 @@ Break
 .break {
 	margin-top: 20rem;
 }
+
+/*-------------------------------------------------------------------------------
+Into Vid
+-------------------------------------------------------------------------------*/
+.ds-banner-section button{
+	background-color: transparent;
+	border: none;
+	padding: 1rem 0;
+}
+
+.video-content{
+	position: relative;
+	padding: 0 5rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: var(--surface1);
+}
+
+.intro-vid {
+	margin: 3rem 0;
+}
+

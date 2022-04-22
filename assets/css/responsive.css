@@ -22,6 +22,9 @@
 
 	.work-details{ padding:0; margin-top:0}
 
+	.video-content{ padding: 0 1.5rem; }
+	#intro-vid{ margin: 1rem 0; }
+
 }
 
 /* xs */
@@ -77,6 +80,9 @@
 	.ds-email_social{justify-content: center;flex-wrap: wrap; padding: 4.375rem 0}
 	.ds-copyright{ text-align: center; }
 	.ds-social{ margin-top: 1.25rem }
+
+	.video-content{ padding: 0 0.5rem; }
+	#intro-vid{ margin: 0.7rem 0; }
 }
 	
 
