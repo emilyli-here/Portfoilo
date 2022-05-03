@@ -17,16 +17,16 @@ window.onload = function() {
   });
 
 
-//chooses the colour default based on user OS system
-// assuming a light mode default
-	if(
-		// This condition checks if the user has set preference for dark mode
-		// or OS dark mode
-		localStorage.getItem('color-mode') === 'dark' ||
-		(window.matchMedia('(prefers-color-scheme: dark)').matches && !localStorage.getItem('color-mode'))
-		){
-		document.documentElement.setAttribute('color-mode', 'dark');
-		toggle.checked = "checked";
-	}
+// //chooses the colour default based on user OS system
+// // assuming a light mode default
+// 	if(
+// 		// This condition checks if the user has set preference for dark mode
+// 		// or OS dark mode
+// 		localStorage.getItem('color-mode') === 'dark' ||
+// 		(window.matchMedia('(prefers-color-scheme: dark)').matches && !localStorage.getItem('color-mode'))
+// 		){
+// 		document.documentElement.setAttribute('color-mode', 'dark');
+// 		toggle.checked = "checked";
+// 	}
 
-};
+// };
