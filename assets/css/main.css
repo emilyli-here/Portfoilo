@@ -419,10 +419,10 @@ Into Vid
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: var(--surface1);
+  background-color: var(--surface2);
 }
 
 .intro-vid {
-	margin: 3rem 0;
+	margin: 2.5rem 0;
 }
 
