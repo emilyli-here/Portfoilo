@@ -330,13 +330,14 @@ main[role="main-inner-wrapper"] article[role="pge-title-content"] p{ font-size:2
 .modalStyle{
 	display: none; /* Hidden*/
 	position: fixed;
-	padding: 10rem 10rem;
+	padding: 8rem 5rem;
 	left: 0;
 	top: 0;
 	z-index: 1000;
 	width: 100%; 
 	height: 100%;
 	overflow: auto;
+
 	background-color: var(--surface3);
 }
 
@@ -345,6 +346,7 @@ main[role="main-inner-wrapper"] article[role="pge-title-content"] p{ font-size:2
 	background-color: transparent;
 	border: none;
 }
+
 
 /* Caption of Modal Image */
 #caption {
@@ -397,15 +399,9 @@ div #modal-button span:nth-child(1) { top: 10px; -webkit-transform: rotate(135de
 div #modal-button span:nth-child(2) {top: 10px; -webkit-transform: rotate(-135deg);-moz-transform: rotate(-135deg);-o-transform: rotate(-135deg);transform: rotate(-135deg);}
 
 
-/*-------------------------------------------------------------------------------
-Break
--------------------------------------------------------------------------------*/
-.break {
-	margin-top: 20rem;
-}
 
 /*-------------------------------------------------------------------------------
-Into Vid
+Intro Vid
 -------------------------------------------------------------------------------*/
 .ds-banner-section button{
 	background-color: transparent;

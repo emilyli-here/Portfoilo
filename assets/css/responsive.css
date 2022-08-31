@@ -25,6 +25,10 @@
 	.video-content{ padding: 0 1.5rem; }
 	#intro-vid{ margin: 1rem 0; }
 
+	/* Photos Modal */
+	.modalStyle{ padding: 8rem 0.5rem;}
+
+
 }
 
 /* xs */
@@ -83,6 +87,9 @@
 
 	.video-content{ padding: 0 0.5rem; }
 	#intro-vid{ margin: 0.7rem 0; }
+
+	/* Photos Modal */
+	.modalStyle{ padding: 8rem 0rem;}
 }
 	
 
