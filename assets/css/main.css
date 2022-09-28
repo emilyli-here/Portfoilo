@@ -58,7 +58,9 @@ html {
 
 
 body {background-color: var(--surface1);  font-family: 'Inter', sans-serif;overflow-x: hidden; font-weight:400;font-style: normal; font-size: var(--font_14);  }
-a,a:hover,a:focus,i,input,button,input:focus,.transition {text-decoration: none;outline: none;transition-delay: 0s;transition-duration: 0.4s;transition-property: all;transition-timing-function: ease;box-shadow: none;}
+a,a:hover,a:focus,i,input,button,input:focus,.transition {text-decoration: none;outline: none;transition-delay: 0s;transition-duration: 0.25s;transition-property: all;transition-timing-function: ease;box-shadow: none;}
+a{color: var(--primary);}
+a:hover{ color: var(--element2) ; }
 iframe {border: 0;outline: none;}
 ::-moz-selection {background: var(--red);text-shadow: none;color:var(--white)}
 ::selection {background:var(--red);text-shadow: none;color:var(--white)}
@@ -76,7 +78,10 @@ figure{ margin: 0 }
 svg,img { max-width: 100%; height: auto; }
 .ds-boder_text{ position: relative; display: inline-block; }
 .ds-boder_text span{ position: relative; z-index: 1 }
-.ds-boder_text:after{ content: ""; position: absolute; bottom: 0; left: 0; background-color:var(--primary); height: 0.9375rem; width:100%;}
+
+.ds-boder_text:after{ content: ""; position: absolute; bottom: 0; left: 0; background-color:var(--primary); height: 0.9375rem; width:100%; transform: scaleX(1.0); transform-origin: bottom left; transition: transform 0.25s ease-out;}
+.ds-boder_text:hover:after{ transform: scaleX(0); transform-origin: bottom right;}
+
 .margin-60{ margin-bottom: var(--margin-60);  }
 .padding-0{ padding-top: 0 }
 .ds-view-button{font-weight: 600; font-size: 1rem; color: var(--element1);}
@@ -93,15 +98,15 @@ svg,img { max-width: 100%; height: auto; }
 .active .ds-arrow:before { bottom: 0 ; top: -0.12rem; transform: rotate(45deg); }
 .active .ds-arrow:after { right: -0.75rem; top: -0.12rem; transform: rotate(135deg); }
 
-.ds-back-to-home{ display: inline-block; padding:0.625rem 1.25rem; border-radius: 100%; border: 1px solid var(--element1); font-size: 1.875rem; color: var(--element1); }
+.ds-back-to-home{ display: inline-block; padding:0.625rem 1.25rem; border-radius: 100%; border: 1px solid var(--element1); font-size: 1.875rem; color: var(--element1);}
 .ds-back-to-home:hover{ color: var(--primary); border-color: var(--primary); }
 /*-----------------------------------------------------------------
   1. >>> Header Style
 ----------------------------------------------------------------*/
 .ds-header{ padding-top:7.1875rem; padding-bottom:var(--40);}
-.ds-logo{font-family: 'Inter', sans-serif; color:var(--element1); font-size:1.5rem; font-weight: 600; text-transform: uppercase;}
+.ds-logo{font-family: 'Inter', sans-serif; color:var(--element1); font-size:1.5rem; font-weight: 600; text-transform: uppercase; text-align: center;}
 .ds-logo:hover{color:var(--primary);}
-.ds-logo img{height: 1em;   margin-left: auto; margin-right: auto;}
+.ds-logo img{height: 1.5rem;  margin-left: auto; margin-right: auto; vertical-align: middle;}
 /*-----------------------------------------------------------------
   2. >>> Banner Style
 ----------------------------------------------------------------*/
@@ -224,7 +229,7 @@ main[role="main-inner-wrapper"] article[role="pge-title-content"] p{ font-size:2
 .ds-social{list-style: none; padding: 0; margin: 0; display: flex;}
 .ds-social li{ margin-right:3rem; }
 .ds-social li:last-child{ margin-right: 0 }
-.ds-social a{ color: #797979; font-size: 2.5625rem; }
+.ds-social a{ color:var(--element3); font-size: 2.5625rem; }
 .ds-social a:hover{ color: var(--primary); }
 .ds-copyright{ display: block; text-align: right; color:#2B2B2B; font-size:1.125rem }
 .ds-copyright a{color:#2B2B2B;}
