@@ -106,7 +106,7 @@ svg,img { max-width: 100%; height: auto; }
 .ds-header{ padding-top:7.1875rem; padding-bottom:var(--40);}
 .ds-logo{font-family: 'Inter', sans-serif; color:var(--element1); font-size:1.5rem; font-weight: 600; text-transform: uppercase; text-align: center;}
 .ds-logo:hover{color:var(--primary);}
-.ds-logo img{height: 1.5rem;  margin-left: auto; margin-right: auto; vertical-align: middle;}
+.ds-logo img{height: 2rem;  margin-left: auto; margin-right: auto; vertical-align: sub;}
 /*-----------------------------------------------------------------
   2. >>> Banner Style
 ----------------------------------------------------------------*/
