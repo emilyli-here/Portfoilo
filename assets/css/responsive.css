@@ -4,6 +4,9 @@
 
 	.comments-reply li section{ width:88%}
 
+	/*heading right padding*/
+	.ds-heading{ padding-right: 3rem;}
+
 }
 
 /* sm */
@@ -27,6 +30,9 @@
 
 	/* Photos Modal */
 	.modalStyle{ padding: 8rem 0.5rem;}
+
+	/*Header right padding*/
+	.ds-heading{ padding-right: 0rem;}
 
 
 }
@@ -89,7 +95,10 @@
 	#intro-vid{ margin: 0.7rem 0; }
 
 	/* Photos Modal */
-	.modalStyle{ padding: 8rem rem;}
+	.modalStyle{ padding: 8rem 0.5rem;}
+
+	/*Header right padding*/
+	.ds-heading{ padding-right: 0rem;}
 }
 	
 
