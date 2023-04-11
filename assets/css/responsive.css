@@ -35,6 +35,21 @@
 	.ds-heading{ padding-right: 0rem;}
 
 
+	/* Full HEader titles*/
+	.full-bleed-color{
+	background-color: var(--secondary);
+	width: 100vw;
+  	position: relative;
+  	left: 50%;
+  	right: 50%;
+ 	margin-left: -50vw;
+  	margin-right: -50vw;
+ 	margin-bottom: 2rem;
+  	text-align: center;
+  	padding: 8rem 0;
+
+
+
 }
 
 /* xs */
@@ -99,6 +114,19 @@
 
 	/*Header right padding*/
 	.ds-heading{ padding-right: 0rem;}
+
+	/* Full HEader titles*/
+	.full-bleed-color{
+	background-color: var(--secondary);
+	width: 100vw;
+  	position: relative;
+  	left: 50%;
+  	right: 50%;
+ 	margin-left: -50vw;
+  	margin-right: -50vw;
+ 	margin-bottom: 2rem;
+  	text-align: center;
+  	padding: 8rem 0;
 }
 	
 

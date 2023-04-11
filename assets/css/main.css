@@ -1,11 +1,11 @@
 /*
-Theme Name: Joana Mertz
 
   1. >>> Headr Style
   2. >>> Banner Style
   3. >>> About Style
   4. >>> Project Style
   5. >>> Footer Style
+  6. >>> My Added content that is a mess
 
 */
 /*--------------------------------------------------------------
@@ -13,7 +13,6 @@ Theme Name: Joana Mertz
 ----------------------------------------------------------------*/
 html {
 	font-family: 'Inter', sans-serif;
-	
 	--night-color: #0d1117;
 	--day-color: #fbfbfb;
 	--primary: #139C7D;
@@ -40,7 +39,7 @@ html {
 :root[color-mode="light"]{
 	--surface1: var(--day-color);
 	--surface2: white;
-	--surface3: #FFFFFFCC; /* Surface 3 is the translucent */
+	--surface3: #F4F4F4CC; /* Surface 3 is the translucent */
 	--element1: var(--night-color);
 	--element2: black;
 	--element3: #474747;
@@ -61,6 +60,7 @@ body {background-color: var(--surface1);  font-family: 'Inter', sans-serif;overf
 a,a:hover,a:focus,i,input,button,input:focus,.transition {text-decoration: none;outline: none;transition-delay: 0s;transition-duration: 0.25s;transition-property: all;transition-timing-function: ease;box-shadow: none;}
 a{color: var(--primary);}
 a:hover{ color: var(--element2) ; }
+u{color: var(--primary);}
 iframe {border: 0;outline: none;}
 .work-images ul { padding: 0; margin: 0; }
 ::-moz-selection {background: var(--red);text-shadow: none;color:var(--white)}
@@ -176,11 +176,11 @@ main[role="main-inner-wrapper"] article[role="pge-title-content"] header h2 span
 
 main[role="main-inner-wrapper"] article[role="pge-title-content"] p{ font-size:20px; line-height:30px; color:var(--element3);}
 
-/*== Work Details ==*/
+/*========= Work Details =============*/
 
 .work-header{ border-bottom: 1px solid var(--element3); margin-bottom: 5rem; padding-bottom: 5rem; }
 
-.work-content{ border-bottom: 1px solid var(--element3); margin-bottom: 2rem; padding-bottom: 2rem; }
+.work-content{ margin-bottom: 1rem; padding-bottom: 1rem;  }
 
 .work-details header h2{ color:var(--element1); font-size:36px; font-weight:800}
 
@@ -192,11 +192,11 @@ main[role="main-inner-wrapper"] article[role="pge-title-content"] p{ font-size:2
 
 .work-details header a:hover i{ color: var(--primary)}
 
-.work-details h3{ line-height:20px; margin-bottom:7px;}
+.work-details h3{margin-bottom:7px;}
 
 .work-details h3 strong{ font-weight: 700; }
 
-.work-details p{ font-size: 1.2rem; color:var(--element3); line-height:var(--font_36); margin-bottom: 2.5rem; font-weight:300}
+.work-details p{ font-size: 1.2rem; color:var(--element3); line-height:var(--font_36); font-weight:300}
 
 .work-details p strong{ font-weight:800}
 
@@ -428,3 +428,30 @@ Intro Vid
 	margin: 2.5rem 0;
 }
 
+
+/*-------------------------------------------------------------------------------
+Full Bleed Box Title Work Details Page
+-------------------------------------------------------------------------------*/
+
+.full-bleed-color{
+	background-color: var(--secondary);
+	width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 8rem 0;
+
+}
+
+
+/*-------------------------------------------------------------------------------
+Prototype Bottom Margin
+-------------------------------------------------------------------------------*/
+
+.figmaprototype{
+	margin-bottom: 5rem;
+}
