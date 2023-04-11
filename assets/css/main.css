@@ -321,7 +321,10 @@ main[role="main-inner-wrapper"] article[role="pge-title-content"] p{ font-size:2
 }
 
 
-/************ Modal BG ***************/
+/*-------------------------------------------------------------------------------
+  Modal Image
+-------------------------------------------------------------------------------*/
+
 .my-modal{
   border-radius: 5px;
   cursor: pointer;
