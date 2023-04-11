@@ -14,7 +14,7 @@
 html {
 	font-family: 'Inter', sans-serif;
 	--night-color: #0d1117;
-	--day-color: #fbfbfb;
+	--day-color: #fdfdfd;
 	--primary: #139C7D;
 	--secondary: #C9E1E3;
 	--night-background: radial-gradient(circle at top left, #0d1117, #000022);
@@ -52,7 +52,7 @@ html {
 	--surface3: #000000CC;
 	--element1: var(--day-color);
 	--element2: white;
-	--element3: #8F8F8F;
+	--element3: #CFCFCF;
 	--fullbleed: var(--primary);
 }
 
@@ -133,7 +133,7 @@ svg,img { max-width: 100%; height: auto; }
 .ds-project-list-loop{ padding: 0 0.75rem; }
 .ds-project-list-loop:nth-child(even){ margin-top:- var(--margin-120) }
 .ds-project-list-loop:nth-child(odd){ margin-top: var(--margin-120) }
-.ds-project-list-loop-inner{ background-color:#FFF; box-shadow: 0px 0px 1px #cecaca;transition-delay: 0s;transition-duration: 0.8s;transition-property: all;transition-timing-function: ease;transform: translateY(0); }
+.ds-project-list-loop-inner{ background-color:#FFF; box-shadow: 0px 0px 3px #cecaca;transition-delay: 0s;transition-duration: 0.8s;transition-property: all;transition-timing-function: ease;transform: translateY(0); }
 .ds-project-list-loop-inner section{padding:1.875rem; background-color: var(--surface2);   }
 .ds-project-list-loop a{ color: #000 }
 .ds-project-list-loop:hover .ds-project-list-loop-inner{/*box-shadow: 0px 0px 20px #cecaca;*/transform: translateY(-1.25rem);}
