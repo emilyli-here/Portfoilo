@@ -43,6 +43,7 @@ html {
 	--element1: var(--night-color);
 	--element2: black;
 	--element3: #474747;
+	--fullbleed: var(--secondary);
 }
 
 :root[color-mode="dark"]{
@@ -52,6 +53,7 @@ html {
 	--element1: var(--day-color);
 	--element2: white;
 	--element3: #8F8F8F;
+	--fullbleed: var(--primary);
 }
 
 
@@ -434,7 +436,7 @@ Full Bleed Box Title Work Details Page
 -------------------------------------------------------------------------------*/
 
 .full-bleed-color{
-	background-color: var(--secondary);
+	background-color: var(--fullbleed);
 	width: 100vw;
   position: relative;
   left: 50%;
